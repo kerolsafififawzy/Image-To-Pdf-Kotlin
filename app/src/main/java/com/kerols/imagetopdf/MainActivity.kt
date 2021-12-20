@@ -32,9 +32,7 @@ class MainActivity : AppCompatActivity() {
         GetImage = findViewById(R.id.GetImage)
         Cancel!!.setEnabled(false)
 
-        // Setting for the page
-        val pdfPage = PdfPage(applicationContext)
-        pdfPage.setPageSize(1000, 1000)
+
 
         // Setting for a single image on a page
         val mPdfImageSetting = PdfImageSetting()
@@ -45,6 +43,11 @@ class MainActivity : AppCompatActivity() {
         val mPdfImageSetting2 = PdfImageSetting()
         mPdfImageSetting2.setImageSize(100, 100)
         mPdfImageSetting2.setMargin(220, 220, 220, 220)
+        
+
+        // Setting for the page
+        val pdfPage = PdfPage(applicationContext)
+        pdfPage.setPageSize(1000, 1000)
 
 
         // Add photos that are set in one page
